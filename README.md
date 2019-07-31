@@ -24,6 +24,7 @@ Default template has rules and items for following services:
 * EMR (`list_clusters()` API call)
 * ELBv2 (`describe_target_groups()` API call)
 * S3 (`list_buckets()` API call)
+* CloudFront (list_distributions() API call)
 
 Detailed overview at: https://wordpress.com/read/feeds/49943587/posts/1417437611
 
