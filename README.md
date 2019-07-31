@@ -1,7 +1,7 @@
 # zabbix-cloudwatch
-Cloudwatch integration for Zabbix 3.x
+Cloudwatch integration for Zabbix 4.x
 
-**Current release: 1.1.0. Zabbix template was tested with Zabbix 3.4, please revert to 1.0.0 if you find any backward incompatibility and open an issue.**
+**Current release: 1.?.?. Zabbix template was tested with Zabbix 4.0, please revert to 1.0.0 if you find any backward incompatibility and open an issue.**
 
 Python 2.7.x
 
@@ -11,7 +11,7 @@ Python 2.7.x
 4. [Install](http://boto3.readthedocs.io/en/latest/guide/quickstart.html) system-wide `boto3` package
 5. Import `cloudwatch_template.xml` into Zabbix
 6. Put credentials of account created in (1) into `/usr/lib/zabbix/scripts/conf/aws.conf`
-7. Create host with 0.0.0.0 as interface and link it to the template. Change macros `ACCOUNT` and `REGION` to correspond to your case: 
+7. Create host with 0.0.0.0 as interface and link it to the template. Change macros `ACCOUNT` and `REGION` to correspond to your case:
 
 ![example](https://awawastuff.files.wordpress.com/2017/04/vi-sky-mon1-configuration-of-hosts.png)
 
@@ -24,6 +24,7 @@ Default template has rules and items for following services:
 * EMR (`list_clusters()` API call)
 * ELBv2 (`describe_target_groups()` API call)
 * S3 (`list_buckets()` API call)
+* CloudFront (`list_distributions()` API call)
 
 Detailed overview at: https://wordpress.com/read/feeds/49943587/posts/1417437611
 
